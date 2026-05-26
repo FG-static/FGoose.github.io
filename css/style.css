@@ -1020,7 +1020,7 @@ a.article-title:hover {
 @media screen and (min-width: 768px) {
   .ggb-float {
     width: 100%;
-    max-width: 420px;
+    max-width: 520px;
     margin: 24px auto;
   }
 }
@@ -1030,7 +1030,7 @@ a.article-title:hover {
     top: 110px;
     right: 24px;
     z-index: 15;
-    width: 400px;
+    width: 500px;
     max-width: none;
     margin: 0;
   }
@@ -1040,7 +1040,7 @@ a.article-title:hover {
     position: sticky;
     top: 24px;
     float: right;
-    width: 420px;
+    width: 520px;
     margin: 0 0 24px 24px;
   }
 }
