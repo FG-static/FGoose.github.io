@@ -1006,6 +1006,9 @@ a.article-title:hover {
 }
 .ggb-float {
   position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background: -webkit-linear-gradient(315deg, rgba(255,255,255,0.92), rgba(255,255,255,0.78));
   background: -moz-linear-gradient(315deg, rgba(255,255,255,0.92), rgba(255,255,255,0.78));
   background: -ms-linear-gradient(315deg, rgba(255,255,255,0.92), rgba(255,255,255,0.78));
@@ -1045,20 +1048,9 @@ a.article-title:hover {
   }
 }
 .ggb-float .ggb-title {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  min-height: 32px;
+  display: block;
+  min-height: 20px;
   margin-bottom: 10px;
-  padding-left: 40px;
   color: #888;
   font-size: 12px;
   font-weight: 600;
@@ -1068,10 +1060,6 @@ a.article-title:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: grab;
-}
-.ggb-float .ggb-title:active {
-  cursor: grabbing;
 }
 .ggb-float iframe {
   width: 100%;
@@ -1082,54 +1070,6 @@ a.article-title:hover {
   background: #fff;
 }
 .ggb-float.is-interacting iframe {
-  pointer-events: none;
-}
-.ggb-float .ggb-drag-handle {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 28px;
-  height: 28px;
-  cursor: grab;
-  opacity: 0.55;
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s, background 0.2s;
-  -moz-transition: opacity 0.2s, -moz-transform 0.2s, background 0.2s;
-  -ms-transition: opacity 0.2s, -ms-transform 0.2s, background 0.2s;
-  transition: opacity 0.2s, transform 0.2s, background 0.2s;
-  z-index: 3;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  line-height: 0;
-  background: rgba(255,255,255,0.82);
-  -webkit-box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-}
-.ggb-float .ggb-drag-handle:active {
-  cursor: grabbing;
-  -webkit-transform: scale(0.96);
-  -moz-transform: scale(0.96);
-  -ms-transform: scale(0.96);
-  transform: scale(0.96);
-}
-.ggb-float .ggb-drag-handle svg {
-  width: 14px;
-  height: 14px;
-  opacity: 0.7;
   pointer-events: none;
 }
 .ggb-float .ggb-resize-handle {
@@ -1178,9 +1118,7 @@ a.article-title:hover {
   pointer-events: none;
 }
 .ggb-float:hover .ggb-resize-handle,
-.ggb-float:hover .ggb-drag-handle,
-.ggb-float.is-interacting .ggb-resize-handle,
-.ggb-float.is-interacting .ggb-drag-handle {
+.ggb-float.is-interacting .ggb-resize-handle {
   opacity: 1;
 }
 #comments {
