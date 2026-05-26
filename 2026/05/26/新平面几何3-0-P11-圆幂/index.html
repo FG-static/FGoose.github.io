@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>新平面几何3-0 P11 圆幂 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Problem △ABC内切圆⊙I，外接圆⊙O，伪外接圆切点P，AI交BC于X，过P作⊙I的切线交过X关于⊙I的切线于S，SA交⊙O于T。 证明：IT ⟂ AS。     Prove 设⊙I与BC，XS的切点为F，D 取出△ABC的A-旁心J，熟知P，F，J三点共线 ∵∠SPI &#x3D; −∠SDI &#x3D; 90∘ ∴ P，I，S，D四点共圆 取IJ中点K，由鸡爪定理知K在⊙O上且KI &#x3D; KB &#x3D; KC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新平面几何3-0 P11 圆幂">
+<meta property="og:url" content="http://example.com/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Problem △ABC内切圆⊙I，外接圆⊙O，伪外接圆切点P，AI交BC于X，过P作⊙I的切线交过X关于⊙I的切线于S，SA交⊙O于T。 证明：IT ⟂ AS。     Prove 设⊙I与BC，XS的切点为F，D 取出△ABC的A-旁心J，熟知P，F，J三点共线 ∵∠SPI &#x3D; −∠SDI &#x3D; 90∘ ∴ P，I，S，D四点共圆 取IJ中点K，由鸡爪定理知K在⊙O上且KI &#x3D; KB &#x3D; KC">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-05-26T15:25:47.000Z">
+<meta property="article:modified_time" content="2026-05-26T16:02:02.911Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+  <section id="top-widgets">
+    <div class="outer">
+      <nav id="widget-nav" aria-label="Content widgets">
+        <div class="widget-dropdown">
+          <button class="widget-dropdown-toggle" type="button">Archives</button>
+          <div class="widget-dropdown-panel">
+            <div class="widget dropdown-widget">
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/05/">May 2026</a></li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="widget-dropdown">
+          <button class="widget-dropdown-toggle" type="button">Recent Posts</button>
+          <div class="widget-dropdown-panel">
+            <div class="widget dropdown-widget">
+              <ul>
+                
+                  <li>
+                    <a href="/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/">新平面几何3-0 P11 圆幂</a>
+                  </li>
+                
+                  <li>
+                    <a href="/2026/05/26/hello-world/">Hello World</a>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+      <div class="outer">
+        <section id="main"><article id="post-新平面几何3-0-P11-圆幂" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" class="article-date">
+  <time class="dt-published" datetime="2026-05-26T15:25:47.000Z" itemprop="datePublished">2026-05-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      新平面几何3-0 P11 圆幂
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="problem">Problem</h3>
+<p><span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>内切圆<span
+class="math inline">⊙<em>I</em></span>，外接圆<span
+class="math inline">⊙<em>O</em></span>，伪外接圆切点<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>A</em><em>I</em></span>交<span
+class="math inline"><em>B</em><em>C</em></span>于<span
+class="math inline"><em>X</em></span>，过<span
+class="math inline"><em>P</em></span>作<span
+class="math inline">⊙<em>I</em></span>的切线交过<span
+class="math inline"><em>X</em></span>关于<span
+class="math inline">⊙<em>I</em></span>的切线于<span
+class="math inline"><em>S</em></span>，<span
+class="math inline"><em>S</em><em>A</em></span>交<span
+class="math inline">⊙<em>O</em></span>于<span
+class="math inline"><em>T</em></span>。</p>
+<p>证明：<span
+class="math inline"><em>I</em><em>T</em> ⟂ <em>A</em><em>S</em></span>。</p>
+<div class="ggb-float">
+<iframe scrolling="no" title="新平面几何3.0版11-圆幂" src="https://www.geogebra.org/material/iframe/id/gxaxfrwf/width/782/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false">
+</iframe>
+</div>
+<h3 id="prove">Prove</h3>
+<p>设<span class="math inline">⊙<em>I</em></span>与<span
+class="math inline"><em>B</em><em>C</em></span>，<span
+class="math inline"><em>X</em><em>S</em></span>的切点为<span
+class="math inline"><em>F</em></span>，<span
+class="math inline"><em>D</em></span></p>
+<p>取出<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的<span
+class="math inline"><em>A</em></span>-旁心<span
+class="math inline"><em>J</em></span>，熟知<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>F</em></span>，<span
+class="math inline"><em>J</em></span>三点共线</p>
+<p><span
+class="math inline">∵∠<em>S</em><em>P</em><em>I</em> = −∠<em>S</em><em>D</em><em>I</em> = 90<sup>∘</sup></span></p>
+<p><span class="math inline">∴ <em>P</em></span>，<span
+class="math inline"><em>I</em></span>，<span
+class="math inline"><em>S</em></span>，<span
+class="math inline"><em>D</em></span>四点共圆</p>
+<p>取<span class="math inline"><em>I</em><em>J</em></span>中点<span
+class="math inline"><em>K</em></span>，由鸡爪定理知<span
+class="math inline"><em>K</em></span>在<span
+class="math inline">⊙<em>O</em></span>上且<span
+class="math inline"><em>K</em><em>I</em> = <em>K</em><em>B</em> = <em>K</em><em>C</em></span></p>
+<p>连接<span class="math inline"><em>I</em><em>F</em></span>，<span
+class="math inline"><em>P</em><em>D</em></span></p>
+<p><span
+class="math inline">∴ ∠<em>I</em><em>J</em><em>F</em> = ∠<em>I</em><em>F</em><em>P</em> − ∠<em>F</em><em>I</em><em>J</em> = −∠<em>I</em><em>P</em><em>F</em> − ∠<em>F</em><em>P</em><em>D</em> = −∠<em>I</em><em>P</em><em>D</em> = ∠<em>I</em><em>D</em><em>P</em></span></p>
+<p><span class="math inline">∴ <em>P</em></span>，<span
+class="math inline"><em>I</em></span>，<span
+class="math inline"><em>D</em></span>，<span
+class="math inline"><em>J</em></span>，<span
+class="math inline"><em>S</em></span>五点共圆</p>
+<p>设<span class="math inline"><em>A</em><em>P</em></span>交<span
+class="math inline"><em>X</em><em>S</em></span>于<span
+class="math inline"><em>Q</em></span></p>
+<p>由对称性易知<span class="math inline"><em>Q</em></span>在<span
+class="math inline">⊙(<em>K</em>, <em>K</em><em>I</em>)</span>上</p>
+<p><span
+class="math inline">∴ ∠<em>A</em><em>K</em><em>Q</em> = −∠<em>A</em><em>K</em><em>C</em> = −∠<em>A</em><em>B</em><em>C</em> = ∠<em>Q</em><em>B</em><em>C</em></span></p>
+<p><span class="math inline">∴ <em>B</em></span>，<span
+class="math inline"><em>X</em></span>，<span
+class="math inline"><em>K</em></span>，<span
+class="math inline"><em>Q</em></span>四点共圆</p>
+<p>又<span
+class="math inline">∠<em>S</em><em>T</em><em>K</em> = ∠<em>A</em><em>C</em><em>K</em> = ∠<em>Q</em><em>B</em><em>K</em> = ∠<em>Q</em><em>X</em><em>K</em></span></p>
+<p><span class="math inline">∴ <em>T</em></span>，<span
+class="math inline"><em>X</em></span>，<span
+class="math inline"><em>K</em></span>，<span
+class="math inline"><em>S</em></span>四点共圆</p>
+<p><span
+class="math inline">∴ <em>A</em><em>T</em> ⋅ <em>A</em><em>S</em> = <em>A</em><em>X</em> ⋅ <em>A</em><em>K</em> = <em>A</em><em>B</em> ⋅ <em>A</em><em>Q</em> = <em>A</em><em>I</em> ⋅ <em>A</em><em>J</em></span></p>
+<p><span class="math inline">∴ <em>T</em></span>，<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>I</em></span>，<span
+class="math inline"><em>D</em></span>，<span
+class="math inline"><em>J</em></span>，<span
+class="math inline"><em>S</em></span>六点共圆</p>
+<p>则<span
+class="math inline">∠<em>I</em><em>T</em><em>A</em> = 90<sup>∘</sup></span></p>
+<p>证毕</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" data-id="cuidr4Rl7COJvUCs5TVR7BZBj" data-title="新平面几何3-0 P11 圆幂" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2026/05/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+
+<script>
+document.querySelectorAll('.ggb-float').forEach(function(el) {
+  var MIN_W = 260;
+  if (el.querySelector('.ggb-title')) return;
+
+  var title = document.createElement('span');
+  title.className = 'ggb-title';
+  title.textContent = 'GeoGebra';
+  el.insertBefore(title, el.firstChild);
+
+  var dragHandle = document.createElement('div');
+  dragHandle.className = 'ggb-drag-handle';
+  dragHandle.innerHTML = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M8 2v12M2 2l4 4M14 2l-4 4M2 14l4-4M14 14l-4-4"/></svg>';
+  el.appendChild(dragHandle);
+
+  var resizeHandle = document.createElement('div');
+  resizeHandle.className = 'ggb-resize-handle';
+  resizeHandle.innerHTML = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14h12M2 14v-12M14 14v-12"/></svg>';
+  el.appendChild(resizeHandle);
+
+  var mode = null;
+  var startX, startY, startW, startLeft, startTop;
+
+  function toFixed() {
+    var rect = el.getBoundingClientRect();
+    el.style.width = rect.width + 'px';
+    el.style.position = 'fixed';
+    el.style.top = rect.top + 'px';
+    el.style.left = rect.left + 'px';
+    el.style.right = 'auto';
+    el.style.float = 'none';
+    el.style.margin = '0';
+  }
+
+  function startDrag(e, m) {
+    if (e.button !== undefined && e.button !== 0) return;
+    e.preventDefault();
+    mode = m;
+    startX = e.clientX;
+    startY = e.clientY;
+    toFixed();
+    startLeft = parseFloat(el.style.left);
+    startTop = parseFloat(el.style.top);
+    startW = el.offsetWidth;
+    document.body.style.userSelect = 'none';
+    el.classList.add('is-interacting');
+  }
+
+  dragHandle.addEventListener('mousedown', function(e) {
+    startDrag(e, 'drag');
+  });
+
+  title.addEventListener('mousedown', function(e) {
+    startDrag(e, 'drag');
+  });
+
+  resizeHandle.addEventListener('mousedown', function(e) {
+    startDrag(e, 'resize');
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    if (!mode) return;
+    var dx = e.clientX - startX;
+    var dy = e.clientY - startY;
+    if (mode === 'drag') {
+      el.style.left = (startLeft + dx) + 'px';
+      el.style.top = (startTop + dy) + 'px';
+    } else {
+      var newW = Math.max(MIN_W, startW - dx);
+      el.style.width = newW + 'px';
+      el.style.left = (startLeft + startW - newW) + 'px';
+    }
+  });
+
+  document.addEventListener('mouseup', function() {
+    if (mode) {
+      mode = null;
+      document.body.style.userSelect = '';
+      el.classList.remove('is-interacting');
+    }
+  });
+});
+</script>
+
+  </div>
+</body>
+</html>
