@@ -111,6 +111,44 @@
     $('body').addClass('has-ggb-float');
   }
 
+  var layoutStorageKey = 'reading-layout',
+    $layoutButtons = $('.layout-switch-btn'),
+    layoutClasses = 'layout-left layout-center layout-right';
+
+  var applyReadingLayout = function(layout){
+    var normalized = layout;
+
+    if (normalized !== 'left' && normalized !== 'right' && normalized !== 'center'){
+      normalized = 'center';
+    }
+
+    $('body').removeClass(layoutClasses).addClass('layout-' + normalized);
+    $layoutButtons.removeClass('is-active').attr('aria-pressed', 'false')
+      .filter('[data-layout="' + normalized + '"]')
+      .addClass('is-active')
+      .attr('aria-pressed', 'true');
+
+    try {
+      window.localStorage.setItem(layoutStorageKey, normalized);
+    } catch (err) {}
+  };
+
+  if ($layoutButtons.length){
+    var storedLayout = null;
+
+    try {
+      storedLayout = window.localStorage.getItem(layoutStorageKey);
+    } catch (err) {}
+
+    applyReadingLayout(storedLayout || 'center');
+
+    $layoutButtons.on('click', function(){
+      applyReadingLayout($(this).attr('data-layout'));
+    });
+  } else {
+    $('body').addClass('layout-center');
+  }
+
   // Mobile nav
   var $container = $('#container'),
     isMobileNavAnim = false,

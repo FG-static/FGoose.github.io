@@ -14,7 +14,7 @@
 <meta property="og:description" content="Problem △ABC内切圆⊙I，外接圆⊙O，伪外接圆切点P，AI交BC于X，过P作⊙I的切线交过X关于⊙I的切线于S，SA交⊙O于T。 证明：IT ⟂ AS。     Prove 设⊙I与BC，XS的切点为F，D 取出△ABC的A-旁心J，熟知P，F，J三点共线 ∵∠SPI &#x3D; −∠SDI &#x3D; 90∘ ∴ P，I，S，D四点共圆 取IJ中点K，由鸡爪定理知K在⊙O上且KI &#x3D; KB &#x3D; KC">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-05-26T15:25:47.000Z">
-<meta property="article:modified_time" content="2026-05-26T16:02:02.911Z">
+<meta property="article:modified_time" content="2026-05-27T04:39:09.892Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -100,11 +100,22 @@
           </div>
         </div>
       </nav>
+      <div id="reading-layout-switcher" aria-label="Reading layout">
+        <button class="layout-switch-btn" type="button" data-layout="left" aria-label="Align article left" aria-pressed="false">
+          <span class="fa fa-align-left"></span>
+        </button>
+        <button class="layout-switch-btn is-active" type="button" data-layout="center" aria-label="Center article" aria-pressed="true">
+          <span class="fa fa-align-center"></span>
+        </button>
+        <button class="layout-switch-btn" type="button" data-layout="right" aria-label="Align article right" aria-pressed="false">
+          <span class="fa fa-align-right"></span>
+        </button>
+      </div>
     </div>
   </section>
 
 
-      <div class="outer">
+      <div class="outer content-outer">
         <section id="main"><article id="post-新平面几何3-0-P11-圆幂" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/FGoose.github.io/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" class="article-date">
@@ -147,7 +158,7 @@ class="math inline"><em>T</em></span>。</p>
 <p>证明：<span
 class="math inline"><em>I</em><em>T</em> ⟂ <em>A</em><em>S</em></span>。</p>
 <div class="ggb-float">
-<iframe scrolling="no" title="新平面几何3.0版11-圆幂" src="https://www.geogebra.org/material/iframe/id/gxaxfrwf/width/782/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false">
+<iframe scrolling="no" title="新平面几何3.0版11-圆幂" src="/FGoose.github.io/ggb/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953.0%E7%89%8811-%E5%9C%86%E5%B9%82.html">
 </iframe>
 </div>
 <h3 id="prove">Prove</h3>
@@ -215,7 +226,7 @@ class="math inline">∠<em>I</em><em>T</em><em>A</em> = 90<sup>∘</sup></sp
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://fg-static.github.io/FGoose.github.io/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" data-id="cuidBKpE900XlN7j9rszNo8E0" data-title="新平面几何3-0 P11 圆幂" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://fg-static.github.io/FGoose.github.io/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" data-id="cuid2IRs2AWLRGeNQ9EZS5WI9" data-title="新平面几何3-0 P11 圆幂" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -276,7 +287,11 @@ class="math inline">∠<em>I</em><em>T</em><em>A</em> = 90<sup>∘</sup></sp
 <script>
 document.querySelectorAll('.ggb-float').forEach(function(el) {
   var MIN_W = 260;
+  var EDGE_GAP = 24;
   if (el.querySelector('.ggb-title')) return;
+  var parent = el.parentNode;
+  var placeholder = document.createComment('ggb-float-placeholder');
+  parent.insertBefore(placeholder, el);
 
   var title = document.createElement('span');
   title.className = 'ggb-title';
@@ -290,6 +305,42 @@ document.querySelectorAll('.ggb-float').forEach(function(el) {
 
   var mode = null;
   var startX, startY, startW, startLeft, startTop;
+  var detached = false;
+
+  function clearDockStyles() {
+    if (mode) return;
+    el.style.position = '';
+    el.style.top = '';
+    el.style.left = '';
+    el.style.right = '';
+    el.style.width = '';
+    el.style.margin = '';
+    el.style.float = '';
+    el.style.transform = '';
+  }
+
+  function syncDockState() {
+    var shouldDetach = window.innerWidth >= 768;
+
+    if (shouldDetach && !detached) {
+      document.body.appendChild(el);
+      el.classList.add('is-detached');
+      detached = true;
+      clearDockStyles();
+      return;
+    }
+
+    if (!shouldDetach && detached) {
+      if (placeholder.parentNode) {
+        placeholder.parentNode.insertBefore(el, placeholder.nextSibling);
+      } else {
+        parent.appendChild(el);
+      }
+      el.classList.remove('is-detached');
+      detached = false;
+      clearDockStyles();
+    }
+  }
 
   function toFixed() {
     var rect = el.getBoundingClientRect();
@@ -300,6 +351,7 @@ document.querySelectorAll('.ggb-float').forEach(function(el) {
     el.style.right = 'auto';
     el.style.float = 'none';
     el.style.margin = '0';
+    el.style.transform = 'none';
   }
 
   function startDrag(e, m) {
@@ -332,9 +384,9 @@ document.querySelectorAll('.ggb-float').forEach(function(el) {
       el.style.left = (startLeft + dx) + 'px';
       el.style.top = (startTop + dy) + 'px';
     } else {
-      var newW = Math.max(MIN_W, startW - dx);
+      var maxW = Math.max(MIN_W, window.innerWidth - EDGE_GAP * 2);
+      var newW = Math.min(maxW, Math.max(MIN_W, startW + dx));
       el.style.width = newW + 'px';
-      el.style.left = (startLeft + startW - newW) + 'px';
     }
   });
 
@@ -345,6 +397,9 @@ document.querySelectorAll('.ggb-float').forEach(function(el) {
       el.classList.remove('is-interacting');
     }
   });
+
+  syncDockState();
+  window.addEventListener('resize', syncDockState);
 });
 </script>
 
