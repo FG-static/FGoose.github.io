@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>新平面几何预选2-0 P21 QA-Cu1 | FGoose</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Problem 禁书预选21（纯几何吧329）： △ABC及一点P，其Ceva三角形为△DEF，X是四边形AEPF的Miquel点，类似定义Y，Z，Q是△DEF关于△ABC的Miquel点，R是P关于△ABC的等角共轭点关于⊙(ABC)的反像，A1是A关于△XYZ的等角共轭点，类似定义B1，C1，D1，E1，F1，P1，Q1，R1。 证明：AA1，BB1，CC1，DD1，EE1，FF1，QQ1，R">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新平面几何预选2-0 P21 QA-Cu1">
+<meta property="og:url" content="https://fg-static.github.io/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95%E9%A2%84%E9%80%892-0-P21-QA-Cu1/index.html">
+<meta property="og:site_name" content="FGoose">
+<meta property="og:description" content="Problem 禁书预选21（纯几何吧329）： △ABC及一点P，其Ceva三角形为△DEF，X是四边形AEPF的Miquel点，类似定义Y，Z，Q是△DEF关于△ABC的Miquel点，R是P关于△ABC的等角共轭点关于⊙(ABC)的反像，A1是A关于△XYZ的等角共轭点，类似定义B1，C1，D1，E1，F1，P1，Q1，R1。 证明：AA1，BB1，CC1，DD1，EE1，FF1，QQ1，R">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-05-27T14:08:42.000Z">
+<meta property="article:modified_time" content="2026-05-27T15:06:54.116Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="geogebra">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/FGoose.github.io/atom.xml" title="FGoose" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/FGoose.github.io/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/FGoose.github.io/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/FGoose.github.io/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/FGoose.github.io/" id="logo">FGoose</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/FGoose.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/FGoose.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/FGoose.github.io/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://fg-static.github.io/FGoose.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+
+  <section id="top-widgets">
+    <div class="outer">
+      <nav id="widget-nav" aria-label="Content widgets">
+        <div class="widget-dropdown">
+          <button class="widget-dropdown-toggle" type="button">Archives</button>
+          <div class="widget-dropdown-panel">
+            <div class="widget dropdown-widget">
+              <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/FGoose.github.io/archives/2026/05/">May 2026</a></li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="widget-dropdown">
+          <button class="widget-dropdown-toggle" type="button">Recent Posts</button>
+          <div class="widget-dropdown-panel">
+            <div class="widget dropdown-widget">
+              <ul>
+                
+                  <li>
+                    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%863/">新平面几何2-0预选 P21 引理3</a>
+                  </li>
+                
+                  <li>
+                    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%862/">新平面几何2-0预选 P21 引理2</a>
+                  </li>
+                
+                  <li>
+                    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%861/">新平面几何2-0预选 P21 引理1</a>
+                  </li>
+                
+                  <li>
+                    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95%E9%A2%84%E9%80%892-0-P21-QA-Cu1/">新平面几何预选2-0 P21 QA-Cu1</a>
+                  </li>
+                
+                  <li>
+                    <a href="/FGoose.github.io/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/">新平面几何3-0 P11 圆幂</a>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="reading-tools">
+        
+          <div class="widget-dropdown article-reference-dropdown">
+            <button class="widget-dropdown-toggle" type="button">本文引用</button>
+            <div class="widget-dropdown-panel">
+              <div class="widget dropdown-widget">
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%861/">新平面几何2-0预选 P21 引理1</a>
+                      </li>
+                    
+                      <li>
+                        <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%862/">新平面几何2-0预选 P21 引理2</a>
+                      </li>
+                    
+                      <li>
+                        <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%863/">新平面几何2-0预选 P21 引理3</a>
+                      </li>
+                    
+                  </ul>
+                
+              </div>
+            </div>
+          </div>
+        
+        <div id="reading-layout-switcher" aria-label="Reading layout">
+          <button class="layout-switch-btn" type="button" data-layout="left" aria-label="Align article left" aria-pressed="false">
+            <span class="fa fa-align-left"></span>
+          </button>
+          <button class="layout-switch-btn is-active" type="button" data-layout="center" aria-label="Center article" aria-pressed="true">
+            <span class="fa fa-align-center"></span>
+          </button>
+          <button class="layout-switch-btn" type="button" data-layout="right" aria-label="Align article right" aria-pressed="false">
+            <span class="fa fa-align-right"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <div class="outer content-outer">
+        <section id="main">
+
+<article id="post-新平面几何预选2-0-P21-QA-Cu1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95%E9%A2%84%E9%80%892-0-P21-QA-Cu1/" class="article-date">
+  <time class="dt-published" datetime="2026-05-27T14:08:42.000Z" itemprop="datePublished">2026-05-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      新平面几何预选2-0 P21 QA-Cu1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="problem">Problem</h3>
+<p>禁书预选21（纯几何吧329）： <span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>及一点<span
+class="math inline"><em>P</em></span>，其Ceva三角形为<span
+class="math inline">△<em>D</em><em>E</em><em>F</em></span>，<span
+class="math inline"><em>X</em></span>是四边形<span
+class="math inline"><em>A</em><em>E</em><em>P</em><em>F</em></span>的Miquel点，类似定义<span
+class="math inline"><em>Y</em></span>，<span
+class="math inline"><em>Z</em></span>，<span
+class="math inline"><em>Q</em></span>是<span
+class="math inline">△<em>D</em><em>E</em><em>F</em></span>关于<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的Miquel点，<span
+class="math inline"><em>R</em></span>是<span
+class="math inline"><em>P</em></span>关于<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的等角共轭点关于<span
+class="math inline">⊙(<em>A</em><em>B</em><em>C</em>)</span>的反像，<span
+class="math inline"><em>A</em><sub>1</sub></span>是<span
+class="math inline"><em>A</em></span>关于<span
+class="math inline">△<em>X</em><em>Y</em><em>Z</em></span>的等角共轭点，类似定义<span
+class="math inline"><em>B</em><sub>1</sub></span>，<span
+class="math inline"><em>C</em><sub>1</sub></span>，<span
+class="math inline"><em>D</em><sub>1</sub></span>，<span
+class="math inline"><em>E</em><sub>1</sub></span>，<span
+class="math inline"><em>F</em><sub>1</sub></span>，<span
+class="math inline"><em>P</em><sub>1</sub></span>，<span
+class="math inline"><em>Q</em><sub>1</sub></span>，<span
+class="math inline"><em>R</em><sub>1</sub></span>。</p>
+<p>证明：<span
+class="math inline"><em>A</em><em>A</em><sub>1</sub></span>，<span
+class="math inline"><em>B</em><em>B</em><sub>1</sub></span>，<span
+class="math inline"><em>C</em><em>C</em><sub>1</sub></span>，<span
+class="math inline"><em>D</em><em>D</em><sub>1</sub></span>，<span
+class="math inline"><em>E</em><em>E</em><sub>1</sub></span>，<span
+class="math inline"><em>F</em><em>F</em><sub>1</sub></span>，<span
+class="math inline"><em>Q</em><em>Q</em><sub>1</sub></span>，<span
+class="math inline"><em>R</em><em>R</em><sub>1</sub></span> <span
+class="math inline">∥</span> <span
+class="math inline"><em>P</em><em>P</em><sub>1</sub></span>。</p>
+<div class="ggb-float">
+<iframe scrolling="no" title="数学题-禁书预选21-QA-Cu1" src="/FGoose.github.io/ggb/%E6%95%B0%E5%AD%A6%E9%A2%98-%E7%A6%81%E4%B9%A6%E9%A2%84%E9%80%8921-QA-Cu1.html">
+</iframe>
+</div>
+<h3 id="prove">Prove</h3>
+<p>证：</p>
+<p><strong>Part 0 必要阐述</strong></p>
+<p>取<span
+class="math inline">△<em>X</em><em>Y</em><em>Z</em></span>中以<span
+class="math inline"><em>P</em><em>P</em><sub>1</sub></span>上无穷远点为枢点的主等角共轭三次曲线<span
+class="math inline"><em>Φ</em></span></p>
+<p><strong>Part 1 <span
+class="math inline"><em>A</em><em>X</em></span>，<span
+class="math inline"><em>B</em><em>Y</em></span>，<span
+class="math inline"><em>C</em><em>Z</em></span>共于点<span
+class="math inline"><em>P</em><sub>1</sub></span></strong></p>
+<p>取<span class="math inline"><em>P</em></span>关于<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的补点<span
+class="math inline"><em>P</em><sup>′</sup></span>，<span
+class="math inline"><em>A</em><em>C</em></span>中点<span
+class="math inline"><em>M</em><sub>2</sub></span></p>
+<p><span class="math inline">∵<em>A</em></span>，<span
+class="math inline"><em>E</em></span>，<span
+class="math inline"><em>B</em></span>，<span
+class="math inline"><em>X</em></span>；<span
+class="math inline"><em>A</em></span>，<span
+class="math inline"><em>F</em></span>，<span
+class="math inline"><em>C</em></span>，<span
+class="math inline"><em>X</em></span>；<span
+class="math inline"><em>B</em></span>，<span
+class="math inline"><em>F</em></span>，<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>X</em></span>四点共圆</p>
+<p><span
+class="math inline">∴ ∠<em>X</em><em>A</em><em>C</em> = ∠<em>X</em><em>B</em><em>P</em></span>，<span
+class="math inline">∠<em>A</em><em>C</em><em>X</em> = ∠<em>B</em><em>F</em><em>X</em> = ∠<em>B</em><em>P</em><em>X</em></span></p>
+<p><span class="math display">$$
+\therefore \triangle ACX \sim \triangle BPX \Rightarrow \frac{AC}{AX} =
+\frac{BP}{BX} \Leftrightarrow \frac{AM_2}{P^{\prime}M_2} = \frac{AX}{BX}
+$$</span></p>
+<p><span
+class="math display">∴ △<em>A</em><em>M</em><sub>2</sub><em>P</em><sup>′</sup> ∼ △<em>A</em><em>X</em><em>B</em> ⇒ ∠<em>X</em><em>A</em><em>C</em> = ∠<em>B</em><em>A</em><em>P</em><sup>′</sup></span></p>
+<p>同理有其他两组等角线</p>
+<p><span class="math inline">∴ <em>A</em><em>X</em></span>，<span
+class="math inline"><em>B</em><em>Y</em></span>，<span
+class="math inline"><em>C</em><em>Z</em></span>共于<span
+class="math inline"><em>P</em><sup>′</sup></span>关于<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的等角共轭点</p>
+<p>又<span class="math inline"><em>A</em></span>，<span
+class="math inline"><em>E</em></span>，<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>Z</em></span>；<span
+class="math inline"><em>C</em></span>，<span
+class="math inline"><em>E</em></span>，<span
+class="math inline"><em>P</em></span>，<span
+class="math inline"><em>X</em></span>四点共圆</p>
+<p><span
+class="math inline">∴ ∠<em>A</em><em>X</em><em>B</em> = ∠<em>C</em><em>X</em><em>P</em> = ∠<em>A</em><em>E</em><em>P</em> = ∠<em>P</em><em>Z</em><em>A</em> = ∠<em>B</em><em>Z</em><em>C</em></span></p>
+<p>设<span class="math inline"><em>A</em><em>X</em></span>，<span
+class="math inline"><em>B</em><em>Y</em></span>，<span
+class="math inline"><em>C</em><em>Z</em></span>共点于<span
+class="math inline"><em>P</em><sub>1</sub><sup>′</sup></span></p>
+<p>则<span class="math inline"><em>B</em></span>，<span
+class="math inline"><em>X</em></span>，<span
+class="math inline"><em>P</em><sub>1</sub><sup>′</sup></span>，<span
+class="math inline"><em>Z</em></span>四点共圆，同理有其他两组共圆</p>
+<p><span
+class="math inline">∴ ∠<em>P</em><em>X</em><em>Z</em> = ∠<em>P</em><em>X</em><em>B</em> − ∠<em>Z</em><em>X</em><em>B</em> = ∠<em>C</em><em>X</em><em>P</em><sub>1</sub><sup>′</sup> − ∠<em>C</em><em>X</em><em>Y</em> = ∠<em>Y</em><em>X</em><em>P</em><sub>1</sub><sup>′</sup></span></p>
+<p>同理可知<span
+class="math inline"><em>P</em><sub>1</sub><sup>′</sup></span>为<span
+class="math inline"><em>P</em></span>关于<span
+class="math inline">△<em>X</em><em>Y</em><em>Z</em></span>的等角共轭点</p>
+<p>即<span
+class="math inline"><em>P</em><sub>1</sub><sup>′</sup> ≡ <em>P</em><sub>1</sub></span></p>
+<p>则<span class="math inline"><em>A</em><sub>1</sub></span>，<span
+class="math inline"><em>B</em><sub>1</sub></span>，<span
+class="math inline"><em>C</em><sub>1</sub></span>在<span
+class="math inline"><em>X</em><em>P</em></span>，<span
+class="math inline"><em>Y</em><em>P</em></span>，<span
+class="math inline"><em>Z</em><em>P</em></span>上</p>
+<p><strong>Part 2 <span
+class="math inline"><em>A</em><em>A</em><sub>1</sub> ∥ <em>B</em><em>B</em><sub>1</sub> ∥ <em>C</em><em>C</em><sub>1</sub> ∥ <em>D</em><em>D</em><sub>1</sub> ∥ <em>E</em><em>E</em><sub>1</sub> ∥ <em>F</em><em>F</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></strong></p>
+<p>由等角共轭性质知<span
+class="math inline"><em>A</em><sub>1</sub></span>，<span
+class="math inline"><em>Y</em></span>，<span
+class="math inline"><em>C</em></span>三点共线</p>
+<p><span
+class="math inline">∴ ∠<em>P</em><sub>1</sub><em>X</em><em>B</em> = ∠<em>C</em><em>X</em><em>A</em><sub>1</sub></span>，<span
+class="math inline">∠<em>B</em><em>P</em><sub>1</sub><em>X</em> = ∠<em>A</em><sub>1</sub><em>C</em><em>X</em></span></p>
+<p><span
+class="math inline">∴ △<em>B</em><em>P</em><sub>1</sub><em>X</em> ∽ △<em>A</em><sub>1</sub><em>C</em><em>X</em></span></p>
+<p><span
+class="math inline">∴ <em>X</em><em>A</em><sub>1</sub> ⋅ <em>X</em><em>P</em><sub>1</sub> = <em>X</em><em>B</em> ⋅ <em>X</em><em>C</em> = <em>X</em><em>P</em> ⋅ <em>X</em><em>A</em> ⇔ <em>A</em><em>A</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></p>
+<p>同理有<span
+class="math inline"><em>B</em><em>B</em><sub>1</sub> ∥ <em>C</em><em>C</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></p>
+<p><span
+class="math inline">∵∠<em>X</em><em>B</em><em>Y</em> = ∠<em>X</em><em>A</em><sub>1</sub><em>Y</em></span></p>
+<p><span class="math inline">∴ <em>X</em></span>，<span
+class="math inline"><em>Y</em></span>，<span
+class="math inline"><em>A</em><sub>1</sub></span>，<span
+class="math inline"><em>B</em></span>四点共圆</p>
+<p>同理可由引理1知<span class="math inline"><em>A</em></span>，<span
+class="math inline"><em>A</em><sub>1</sub></span>，<span
+class="math inline"><em>B</em></span>，<span
+class="math inline"><em>B</em><sub>1</sub></span>，<span
+class="math inline"><em>C</em></span>，<span
+class="math inline"><em>C</em><sub>1</sub></span>在<span
+class="math inline"><em>Φ</em></span>上</p>
+<p>又<span class="math inline"><em>A</em></span>，<span
+class="math inline"><em>B</em></span>，<span
+class="math inline"><em>D</em></span>，<span
+class="math inline"><em>Y</em></span>四点共圆，故再由引理1知<span
+class="math inline"><em>D</em></span>在<span
+class="math inline"><em>Φ</em></span>上</p>
+<p>同理可知<span class="math inline"><em>E</em></span>，<span
+class="math inline"><em>F</em></span>也在<span
+class="math inline"><em>Φ</em></span>上</p>
+<p>那么<span
+class="math inline"><em>D</em><em>D</em><sub>1</sub> ∥ <em>E</em><em>E</em><sub>1</sub> ∥ <em>F</em><em>F</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></p>
+<p><strong>Part 3 <span
+class="math inline"><em>Q</em><em>Q</em><sub>1</sub> ∥ <em>R</em><em>R</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></strong></p>
+<p>取<span class="math inline"><em>P</em></span>关于<span
+class="math inline">△<em>A</em><em>B</em><em>C</em></span>的等角共轭点<span
+class="math inline"><em>S</em></span></p>
+<p><span class="math display">$$
+\angle CPA + \angle CSA = \angle CBA, \qquad \angle CBA = \frac{\angle
+CSA + \angle CRA}{2}
+$$</span></p>
+<p><span
+class="math inline">∴ ∠<em>C</em><em>R</em><em>A</em> = 2∠<em>C</em><em>B</em><em>A</em> − ∠<em>C</em><em>S</em><em>A</em> = ∠<em>C</em><em>B</em><em>A</em> + ∠<em>C</em><em>P</em><em>A</em> = ∠<em>C</em><em>B</em><em>A</em> + ∠<em>D</em><em>P</em><em>C</em> = ∠<em>A</em><em>Y</em><em>C</em></span></p>
+<p><span class="math inline">∴ <em>A</em></span>，<span
+class="math inline"><em>Y</em></span>，<span
+class="math inline"><em>C</em></span>，<span
+class="math inline"><em>R</em></span>四点共圆 <span
+class="math inline"> ⇔ <em>R</em></span>，<span
+class="math inline"><em>R</em><sub>1</sub></span>在<span
+class="math inline"><em>Φ</em></span>上</p>
+<p>再由引理1知<span class="math inline"><em>R</em></span>，<span
+class="math inline"><em>E</em><sub>1</sub></span>，<span
+class="math inline"><em>Y</em></span>三点共线</p>
+<p>又<span class="math inline"><em>R</em></span>为四边形<span
+class="math inline"><em>A</em><em>B</em><em>C</em><em>P</em></span>的等角中心</p>
+<p><span
+class="math inline">∴ △<em>A</em><em>B</em><em>C</em></span>外心<span
+class="math inline"><em>O</em></span>，<span
+class="math inline"><em>S</em></span>，<span
+class="math inline"><em>R</em></span>三点共线</p>
+<p>仿照之前通过相似得到的线段积，我们类似有</p>
+<p><span
+class="math inline"><em>P</em><em>R</em> ⋅ <em>X</em><em>D</em> = <em>X</em><em>P</em> ⋅ <em>A</em><em>D</em></span></p>
+<p><span
+class="math inline"><em>X</em><em>B</em> ⋅ <em>X</em><em>C</em> = <em>X</em><em>R</em> ⋅ <em>X</em><em>D</em></span></p>
+<p>延长<span class="math inline"><em>A</em><em>X</em></span>交<span
+class="math inline">⊙(<em>A</em><em>B</em><em>C</em>)</span>另一点于<span
+class="math inline"><em>X</em><sup>′</sup></span></p>
+<p>由引理2整理知</p>
+<p><span class="math display">$$
+\therefore \frac{RX \cdot PD \cdot AC}{XX' \cdot PR \cdot BP}
+= \frac{BE \cdot RX \cdot PR \cdot BP}{BX \cdot CE \cdot PD \cdot AC}
+= \frac{BE \cdot RX \cdot AD \cdot AC}{BX \cdot CE \cdot PD \cdot BP}
+= \frac{BE \cdot XC \cdot PR \cdot AC}{CE \cdot XP \cdot PD \cdot BR}
+= \frac{XC}{XP}
+= \frac{AC}{BP}
+$$</span></p>
+<p><span class="math display">$$
+\therefore \frac{PR}{PD} = \frac{RX}{XX'}
+$$</span></p>
+<p><span
+class="math display">△<em>R</em><em>P</em><em>D</em> ∼ △<em>R</em><em>X</em><em>X</em><sup>′</sup> ⇒ <em>X</em><sup>′</sup>
+在  ⊙ (<em>A</em><em>D</em><em>R</em>) 上</span></p>
+<p>设<span class="math inline"><em>A</em><em>S</em></span>交<span
+class="math inline">⊙(<em>A</em><em>B</em><em>C</em>)</span>另一点于<span
+class="math inline"><em>S</em><sup>′</sup></span>，<span
+class="math inline"><em>X</em><sup>′</sup><em>S</em><sup>′</sup></span>交<span
+class="math inline"><em>B</em><em>C</em></span>于<span
+class="math inline"><em>W</em></span></p>
+<p>则由引理3结合引理2知<span
+class="math inline"><em>W</em><em>A</em></span>是<span
+class="math inline">⊙(<em>A</em><em>E</em><em>F</em>)</span>切线</p>
+<p><span
+class="math inline">∴ ∠<em>A</em><em>X</em><sup>′</sup><em>S</em><sup>′</sup> = ∠<em>S</em><sup>′</sup><em>B</em><em>A</em> = ∠<em>C</em><em>D</em><em>A</em> = ∠<em>A</em><em>D</em><em>W</em></span></p>
+<p><span class="math inline">∴ <em>A</em></span>，<span
+class="math inline"><em>D</em></span>，<span
+class="math inline"><em>X</em><sup>′</sup></span>，<span
+class="math inline"><em>W</em></span>四点共圆 <span
+class="math inline"> ⇔ <em>W</em></span>在<span
+class="math inline">⊙(<em>A</em><em>D</em><em>R</em>)</span>上</p>
+<p>故再由引理2知</p>
+<p><span
+class="math inline">∠<em>D</em><em>R</em><em>A</em> = ∠<em>D</em><em>W</em><em>A</em> = ∠<em>A</em><em>Q</em><em>D</em></span></p>
+<p><span class="math inline">∴ <em>A</em></span>，<span
+class="math inline"><em>Q</em></span>，<span
+class="math inline"><em>X</em><sup>′</sup></span>，<span
+class="math inline"><em>R</em></span>，<span
+class="math inline"><em>W</em></span>，<span
+class="math inline"><em>D</em></span>六点共圆</p>
+<p>类似地有其他两组共圆</p>
+<p>则<span class="math inline"><em>P</em><sub>1</sub></span>，<span
+class="math inline"><em>Q</em></span>，<span
+class="math inline"><em>R</em></span>三点共线（<span
+class="math inline"><em>P</em><sub>1</sub></span>在这三个圆的根轴上）</p>
+<p>故由引理1知<span class="math inline"><em>Q</em></span>，<span
+class="math inline"><em>Q</em><sub>1</sub></span>在<span
+class="math inline"><em>Φ</em></span>上</p>
+<p>于是<span
+class="math inline"><em>R</em><em>R</em><sub>1</sub> ∥ <em>Q</em><em>Q</em><sub>1</sub> ∥ <em>P</em><em>P</em><sub>1</sub></span></p>
+<p>证毕</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://fg-static.github.io/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95%E9%A2%84%E9%80%892-0-P21-QA-Cu1/" data-id="cuidGNSNyzrTcf8wguzf2-miN" data-title="新平面几何预选2-0 P21 QA-Cu1" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/FGoose.github.io/tags/geogebra/" rel="tag">geogebra</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/FGoose.github.io/2026/05/27/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%952-0%E9%A2%84%E9%80%89-P21-%E5%BC%95%E7%90%861/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          新平面几何2-0预选 P21 引理1
+        
+      </div>
+    </a>
+  
+  
+    <a href="/FGoose.github.io/2026/05/26/%E6%96%B0%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%953-0-P11-%E5%9C%86%E5%B9%82/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">新平面几何3-0 P11 圆幂</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/FGoose.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/FGoose.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/FGoose.github.io/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/FGoose.github.io/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/FGoose.github.io/js/script.js"></script>
+
+
+
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
+
+<script>
+document.querySelectorAll('.ggb-float').forEach(function(el) {
+  var MIN_W = 260;
+  var EDGE_GAP = 24;
+  if (el.querySelector('.ggb-title')) return;
+  var parent = el.parentNode;
+  var placeholder = document.createComment('ggb-float-placeholder');
+  parent.insertBefore(placeholder, el);
+
+  var title = document.createElement('span');
+  title.className = 'ggb-title';
+  title.textContent = 'GeoGebra';
+  el.insertBefore(title, el.firstChild);
+
+  var resizeRight = document.createElement('div');
+  resizeRight.className = 'ggb-resize-handle ggb-resize-right';
+  resizeRight.innerHTML = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14h12M2 14v-12M14 14v-12"/></svg>';
+  el.appendChild(resizeRight);
+
+  var resizeLeft = document.createElement('div');
+  resizeLeft.className = 'ggb-resize-handle ggb-resize-left';
+  resizeLeft.innerHTML = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14h12M2 14v-12M14 14v-12"/></svg>';
+  el.appendChild(resizeLeft);
+
+  var mode = null;
+  var startX, startY, startW, startLeft, startTop;
+  var detached = false;
+
+  function clearDockStyles() {
+    if (mode) return;
+    el.style.position = '';
+    el.style.top = '';
+    el.style.left = '';
+    el.style.right = '';
+    el.style.width = '';
+    el.style.margin = '';
+    el.style.float = '';
+    el.style.transform = '';
+  }
+
+  function syncDockState() {
+    var shouldDetach = window.innerWidth >= 768;
+
+    if (shouldDetach && !detached) {
+      document.body.appendChild(el);
+      el.classList.add('is-detached');
+      detached = true;
+      clearDockStyles();
+      return;
+    }
+
+    if (!shouldDetach && detached) {
+      if (placeholder.parentNode) {
+        placeholder.parentNode.insertBefore(el, placeholder.nextSibling);
+      } else {
+        parent.appendChild(el);
+      }
+      el.classList.remove('is-detached');
+      detached = false;
+      clearDockStyles();
+    }
+  }
+
+  function toFixed() {
+    var rect = el.getBoundingClientRect();
+    el.style.width = rect.width + 'px';
+    el.style.position = 'fixed';
+    el.style.top = rect.top + 'px';
+    el.style.left = rect.left + 'px';
+    el.style.right = 'auto';
+    el.style.float = 'none';
+    el.style.margin = '0';
+    el.style.transform = 'none';
+  }
+
+  function startDrag(e, m) {
+    if (e.button !== undefined && e.button !== 0) return;
+    e.preventDefault();
+    mode = m;
+    startX = e.clientX;
+    startY = e.clientY;
+    toFixed();
+    startLeft = parseFloat(el.style.left);
+    startTop = parseFloat(el.style.top);
+    startW = el.offsetWidth;
+    document.body.style.userSelect = 'none';
+    el.classList.add('is-interacting');
+  }
+
+  title.addEventListener('mousedown', function(e) {
+    startDrag(e, 'drag');
+  });
+
+  resizeRight.addEventListener('mousedown', function(e) {
+    startDrag(e, 'resize-right');
+  });
+
+  resizeLeft.addEventListener('mousedown', function(e) {
+    startDrag(e, 'resize-left');
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    if (!mode) return;
+    var dx = e.clientX - startX;
+    var dy = e.clientY - startY;
+    if (mode === 'drag') {
+      el.style.left = (startLeft + dx) + 'px';
+      el.style.top = (startTop + dy) + 'px';
+    } else if (mode === 'resize-right') {
+      var maxW = Math.max(MIN_W, window.innerWidth - EDGE_GAP * 2);
+      var newW = Math.min(maxW, Math.max(MIN_W, startW + dx));
+      el.style.width = newW + 'px';
+    } else if (mode === 'resize-left') {
+      var maxW = Math.max(MIN_W, window.innerWidth - EDGE_GAP * 2);
+      var newW = Math.min(maxW, Math.max(MIN_W, startW - dx));
+      el.style.width = newW + 'px';
+      el.style.left = (startLeft + startW - newW) + 'px';
+    }
+  });
+
+  document.addEventListener('mouseup', function() {
+    if (mode) {
+      mode = null;
+      document.body.style.userSelect = '';
+      el.classList.remove('is-interacting');
+    }
+  });
+
+  syncDockState();
+  window.addEventListener('resize', syncDockState);
+});
+</script>
+
+  </div>
+</body>
+</html>
